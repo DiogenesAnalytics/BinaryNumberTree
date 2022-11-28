@@ -26,3 +26,44 @@ positional arguments:
 options:
   -h, --help  show this help message and exit
 ```
+
+### Example
+What the output looks like for a *binary tree* of `depth = 4`:
+```
+{}
+├── 0
+│   ├── 0
+│   │   ├── 0
+│   │   │   ├── 0
+│   │   │   └── 1
+│   │   └── 1
+│   │       ├── 0
+│   │       └── 1
+│   └── 1
+│       ├── 0
+│       │   ├── 0
+│       │   └── 1
+│       └── 1
+│           ├── 0
+│           └── 1
+└── 1
+    ├── 0
+    │   ├── 0
+    │   │   ├── 0
+    │   │   └── 1
+    │   └── 1
+    │       ├── 0
+    │       └── 1
+    └── 1
+        ├── 0
+        │   ├── 0
+        │   └── 1
+        └── 1
+            ├── 0
+            └── 1
+
+Total combinations: 16
+```
+Notice that the *root* of the tree is the *empty set* denoted by `{}`. Also the
+*total combinations* (i.e. all possible binary numbers of the given bit-length)
+are printed at the bottom.
